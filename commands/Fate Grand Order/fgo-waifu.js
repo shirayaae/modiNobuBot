@@ -15,7 +15,7 @@ module.exports = class FGOWaifuCommand extends Command {
   run(message, args, prefix) {
     let name = message.author.username;
     if (message.member) name = message.member.displayName;
-    let time = this.cooldown[message.author.id] - message.createdTimestamp + 600000;
+    let time = this.cooldown[message.author.id] - message.createdTimestamp + 300000;
     if (time > 0 && message.author.id != this.main.config.ownerID) {
         message.channel.send(`You can only use this command once every 5 minutes. You can use it again in ${Math.floor(time / 60000)} minutes ${Math.ceil(time / 1000) % 60} seconds`);
     } else {
