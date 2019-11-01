@@ -12,7 +12,7 @@ module.exports = class GachaCommand extends Command {
       args: [
         {
           name: "yolo",
-          desc: "Optional. Include this for a solo roll. If not included, a 10-roll with a 15-minute cooldown will be carried out"
+          desc: "Optional. Include this for a solo roll. If not included, a 10-roll with a 5-minute cooldown will be carried out"
         }
       ]
     });
@@ -72,9 +72,9 @@ module.exports = class GachaCommand extends Command {
           message.channel.send(`The results are in, you get (in card ID):\`\`\`\n${result}\`\`\``, {file: {attachment: canvas.toBuffer(), name: "result.png"}});
         });
       } else {
-        let time = this.cooldown[message.author.id] - message.createdTimestamp + 900000;
+        let time = this.cooldown[message.author.id] - message.createdTimestamp + 300000;
         if (time > 0 && message.author.id != this.main.config.ownerID) {
-          message.channel.send(`You can only use this command once every 15 minutes. You can use it again in ${Math.floor(time / 60000)} minutes ${Math.ceil(time / 1000) % 60} seconds`);
+          message.channel.send(`You can only use this command once every 5 minutes. You can use it again in ${Math.floor(time / 60000)} minutes ${Math.ceil(time / 1000) % 60} seconds`);
         } else {
           this.cooldown[message.author.id] = message.createdTimestamp;
           const canvas = new Canvas(645, 444);
