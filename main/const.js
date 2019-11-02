@@ -28,6 +28,7 @@ module.exports = {
     ["wabisabi","https://i.imgur.com/0uUyYn0.jpg"],
     ["normies","https://i.imgur.com/aEHgeMV.jpg"],
     ["dab","https://i.imgur.com/FI19YHn.jpg"],
+    ["nwhat","https://i.kym-cdn.com/photos/images/original/001/515/682/ca8.png"],
     ["lenny","( ͡° ͜ʖ ͡°)"],
     ["tableflip","(╯°□°）╯︵ ┻━┻"],
     ["unflip","┬─┬﻿ ノ( ゜-゜ノ)"],
