@@ -17,6 +17,7 @@ module.exports = {
     ["jam","http://i.imgur.com/ZXlW6fi.png"],
     ["yorokobe","http://i.imgur.com/CGj0vTt.png"],
     ["lewd","http://i.imgur.com/XH34as1.jpg"],
+    ["f2pbtw","https://i.imgur.com/HajML96.jpg"],
     ["lenny","( ͡° ͜ʖ ͡°)"],
     ["tableflip","(╯°□°）╯︵ ┻━┻"],
     ["unflip","┬─┬﻿ ノ( ゜-゜ノ)"],
