@@ -16,6 +16,7 @@ module.exports = {
     ["noob","http://i.imgur.com/v7r7fwG.gif"],
     ["jam","http://i.imgur.com/ZXlW6fi.png"],
     ["yorokobe","http://i.imgur.com/CGj0vTt.png"],
+    ["jollitanada","https://i.imgur.com/JffTT0p.png"],
     ["lewd","http://i.imgur.com/XH34as1.jpg"],
     ["f2pbtw","https://i.imgur.com/HajML96.jpg"],
     ["fab","https://i.imgur.com/QmYyjmx.jpg"],
