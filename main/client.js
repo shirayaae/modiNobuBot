@@ -84,9 +84,9 @@ module.exports = class NobuBot {
 
           } else if (customCommand.has(args[0])) message.channel.send(customCommand.get(args[0]));
 		  
-		  let customCommand;
-          if (config && config.commands) customCommand = new Map([...Constants.emoji, ...config.commands]); 
-		  else customCommand = Constants.atone; 
+		  let customCommand1;
+          if (config && config.commands) customCommand1 = new Map([...Constants.emoji, ...config.commands]); 
+		  else customCommand1 = Constants.atone; 
           let command = this.commands.get(args[0].toLowerCase());
           if (command) {
             if (command.cleanContent) {
@@ -101,11 +101,11 @@ module.exports = class NobuBot {
             this.dashboard.update({ type: "commandUsage" })
             console.log(`${command.name} command has been triggered`);
 
-          } else if (customCommand.has(args[0])) message.channel.send(customCommand.get(args[0]));
+          } else if (customCommand1.has(args[0])) message.channel.send(customCommand1.get(args[0]));
 		  
-		  let customCommand;
-          if (config && config.commands) customCommand = new Map([...Constants.emoji, ...config.commands]); 
-		  else customCommand = Constants.cbg;
+		  let customCommand2;
+          if (config && config.commands) customCommand2 = new Map([...Constants.emoji, ...config.commands]); 
+		  else customCommand2 = Constants.cbg;
           let command = this.commands.get(args[0].toLowerCase());
           if (command) {
             if (command.cleanContent) {
@@ -120,7 +120,7 @@ module.exports = class NobuBot {
             this.dashboard.update({ type: "commandUsage" })
             console.log(`${command.name} command has been triggered`);
 
-          } else if (customCommand.has(args[0])) message.channel.send(customCommand.get(args[0]));
+          } else if (customCommand2.has(args[0])) message.channel.send(customCommand2.get(args[0]));
         });
       });
       this.client.login(this.config.token).catch(console.log);
