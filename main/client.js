@@ -86,7 +86,7 @@ module.exports = class NobuBot {
 		  
 		  let customCommand1;
           if (config && config.commands) customCommand1 = new Map([...Constants.emoji, ...config.commands]); 
-		  else customCommand1 = Constants.atone; 
+		  else customCommand1 = Constants.at1; 
           let command1 = this.commands.get(args[0].toLowerCase());
           if (command1) {
             if (command1.cleanContent) {
