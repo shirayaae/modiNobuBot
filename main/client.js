@@ -96,12 +96,12 @@ module.exports = class NobuBot {
             } else if (!command1.caseSensitive) {
               args = content.toLowerCase().split(' ');
             }
-            command1.run(message, args.slice(1), prefix);
+            message.channel.send('', {file: {attachment: "http://i.imgur.com/eoWffyo.png", name: 'Whassup.png'}});
             command1.timeUsed++;
             this.dashboard.update({ type: "commandUsage" })
             console.log(`${command1.name} command has been triggered`);
 
-          } else if (customCommand1.has(args[0])) message.channel.send('', {file: {attachment: "customCommand1.get(args[0])"}}) ;
+          } else if (customCommand1.has(args[0])) message.channel.send(customCommand1.get(args[0]));
 		  
 		  let customCommand2;
           if (config && config.commands) customCommand2 = new Map([...Constants.emoji, ...config.commands]); 
