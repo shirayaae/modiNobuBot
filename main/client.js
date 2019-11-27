@@ -68,7 +68,43 @@ module.exports = class NobuBot {
           let customCommand;
           if (config && config.commands) customCommand = new Map([...Constants.emoji, ...config.commands]);
           else customCommand = Constants.emoji;
-		  else customCommand = Constants.atone;
+          let command = this.commands.get(args[0].toLowerCase());
+          if (command) {
+            if (command.cleanContent) {
+              args = cleanContent;
+              if (!command.caseSensitive) args = args.toLowerCase();
+              args = args.split(' ');
+            } else if (!command.caseSensitive) {
+              args = content.toLowerCase().split(' ');
+            }
+            command.run(message, args.slice(1), prefix);
+            command.timeUsed++;
+            this.dashboard.update({ type: "commandUsage" })
+            console.log(`${command.name} command has been triggered`);
+
+          } else if (customCommand.has(args[0])) message.channel.send(customCommand.get(args[0]));
+		  
+		  let customCommand;
+          if (config && config.commands) customCommand = new Map([...Constants.emoji, ...config.commands]); 
+		  else customCommand = Constants.atone; 
+          let command = this.commands.get(args[0].toLowerCase());
+          if (command) {
+            if (command.cleanContent) {
+              args = cleanContent;
+              if (!command.caseSensitive) args = args.toLowerCase();
+              args = args.split(' ');
+            } else if (!command.caseSensitive) {
+              args = content.toLowerCase().split(' ');
+            }
+            command.run(message, args.slice(1), prefix);
+            command.timeUsed++;
+            this.dashboard.update({ type: "commandUsage" })
+            console.log(`${command.name} command has been triggered`);
+
+          } else if (customCommand.has(args[0])) message.channel.send(customCommand.get(args[0]));
+		  
+		  let customCommand;
+          if (config && config.commands) customCommand = new Map([...Constants.emoji, ...config.commands]); 
 		  else customCommand = Constants.cbg;
           let command = this.commands.get(args[0].toLowerCase());
           if (command) {
