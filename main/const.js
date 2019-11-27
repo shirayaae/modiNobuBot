@@ -32,7 +32,7 @@ module.exports = {
     ["shrug","¯\\_(ツ)_/¯"],
     ["police","http://i.imgur.com/YCxseg7.png"]
   ]),
-   atone: new Map([
+   at1: new Map([
     ["nigga",'https://i.imgur.com/XAuIFpv.png'],
     ["jollitanada","https://i.imgur.com/JffTT0p.png"],
     ["gangnam",'https://i.imgur.com/A2uNXKu.gif'],
