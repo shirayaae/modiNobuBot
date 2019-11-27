@@ -85,8 +85,7 @@ module.exports = class NobuBot {
           } else if (customCommand.has(args[0])) message.channel.send(customCommand.get(args[0]));
 		  
 		  let customCommand1;
-          if (config && config.commands) customCommand1 = new Map([...Constants.emoji, ...config.commands]); 
-		  else customCommand1 = Constants.atone; 
+          if (config && config.commands) customCommand1 = Constants.atone; 
           let command1 = this.commands.get(args[0].toLowerCase());
           if (command1) {
             if (command1.cleanContent) {
@@ -101,7 +100,7 @@ module.exports = class NobuBot {
             this.dashboard.update({ type: "commandUsage" })
             console.log(`${command1.name} command has been triggered`);
 
-          } else if (customCommand1.has(args[0])) message.channel.send('', {file: {attachment: "message.channel.send(customCommand1.get(args[0]))", name: 'Whassup.png'}}) ;
+          } else if (customCommand1.has(args[0])) message.channel.send('', {file: {attachment: "customCommand1.get(args[0])"}}) ;
 		  
 		  let customCommand2;
           if (config && config.commands) customCommand2 = new Map([...Constants.emoji, ...config.commands]); 
