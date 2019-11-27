@@ -41,6 +41,14 @@ module.exports = {
     ["shrug","¯\\_(ツ)_/¯"],
     ["police","http://i.imgur.com/YCxseg7.png"]
   ]),
+    at1: new Map([
+    ["nigga",'https://i.imgur.com/XAuIFpv.png'],
+    ["gangnam",'https://i.imgur.com/A2uNXKu.gif'],
+    ["gangnam1",'https://i.imgur.com/Cks4eRP.gif'],
+    ["icecream",'https://i.imgur.com/Mj5InrC.png'],
+    ["noobs",'https://i.imgur.com/VR2E9po.png'],
+    ["forever",'https://i.imgur.com/ghUIeJt.png'],
+  ]),
   cirno: new Map([
     ["interested", 'http://i.imgur.com/mFGvw33.png'],
     ["serious", 'http://i.imgur.com/FW9LtSk.png']
