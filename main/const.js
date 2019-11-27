@@ -41,7 +41,7 @@ module.exports = {
     ["noobs",'https://i.imgur.com/VR2E9po.png'],
     ["forever",'https://i.imgur.com/ghUIeJt.png']
   ]),
-   fgo: new Map([
+   cbg: new Map([
     ["okita","https://i.imgur.com/mQol1kv.jpg"],
     ["taiga","https://i.imgur.com/If7TL9W.jpg"]
   ]),
