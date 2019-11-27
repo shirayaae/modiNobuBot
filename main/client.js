@@ -66,7 +66,7 @@ module.exports = class NobuBot {
           let args = content.split(' ');
 
           let customCommand;
-          if (config && config.commands) customCommand = new Map([...Constants.emoji, ...config.commands]);
+          if (config && config.commands) customCommand = new Map([...Constants.emoji,...Constants.at1, ...config.commands]);
           else customCommand = Constants.emoji;
           let command = this.commands.get(args[0].toLowerCase());
           if (command) {
@@ -88,7 +88,7 @@ module.exports = class NobuBot {
       this.client.login(this.config.token).catch(console.log);
     }).catch(console.log);
     setInterval(function() {
-      http.get("http://nobubot.herokuapp.com");
+      http.get("https://modified-nobu-bot.herokuapp.com/");
     }, 300000);    
   }
 }
