@@ -87,38 +87,38 @@ module.exports = class NobuBot {
 		  let customCommand1;
           if (config && config.commands) customCommand1 = new Map([...Constants.emoji, ...config.commands]); 
 		  else customCommand1 = Constants.atone; 
-          let command = this.commands.get(args[0].toLowerCase());
-          if (command) {
-            if (command.cleanContent) {
+          let command1 = this.commands.get(args[0].toLowerCase());
+          if (command1) {
+            if (command1.cleanContent) {
               args = cleanContent;
-              if (!command.caseSensitive) args = args.toLowerCase();
+              if (!command1.caseSensitive) args = args.toLowerCase();
               args = args.split(' ');
-            } else if (!command.caseSensitive) {
+            } else if (!command1.caseSensitive) {
               args = content.toLowerCase().split(' ');
             }
-            command.run(message, args.slice(1), prefix);
-            command.timeUsed++;
+            command1.run(message, args.slice(1), prefix);
+            command1.timeUsed++;
             this.dashboard.update({ type: "commandUsage" })
-            console.log(`${command.name} command has been triggered`);
+            console.log(`${command1.name} command has been triggered`);
 
           } else if (customCommand1.has(args[0])) message.channel.send(customCommand1.get(args[0]));
 		  
 		  let customCommand2;
           if (config && config.commands) customCommand2 = new Map([...Constants.emoji, ...config.commands]); 
 		  else customCommand2 = Constants.cbg;
-          let command = this.commands.get(args[0].toLowerCase());
-          if (command) {
-            if (command.cleanContent) {
+          let command2 = this.commands.get(args[0].toLowerCase());
+          if (command2) {
+            if (command2.cleanContent) {
               args = cleanContent;
-              if (!command.caseSensitive) args = args.toLowerCase();
+              if (!command2.caseSensitive) args = args.toLowerCase();
               args = args.split(' ');
-            } else if (!command.caseSensitive) {
+            } else if (!command2.caseSensitive) {
               args = content.toLowerCase().split(' ');
             }
-            command.run(message, args.slice(1), prefix);
-            command.timeUsed++;
+            command2.run(message, args.slice(1), prefix);
+            command2.timeUsed++;
             this.dashboard.update({ type: "commandUsage" })
-            console.log(`${command.name} command has been triggered`);
+            console.log(`${command2.name} command has been triggered`);
 
           } else if (customCommand2.has(args[0])) message.channel.send(customCommand2.get(args[0]));
         });
