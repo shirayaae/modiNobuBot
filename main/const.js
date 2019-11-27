@@ -36,7 +36,6 @@ module.exports = {
     ["police","http://i.imgur.com/YCxseg7.png"]
   ]),
     at1: new Map([
-    ["nigga",'https://i.imgur.com/XAuIFpv.png'],
     ["gangnam",'https://i.imgur.com/A2uNXKu.gif'],
     ["gangnam1",'https://i.imgur.com/Cks4eRP.gif'],
     ["icecream",'https://i.imgur.com/Mj5InrC.png'],
