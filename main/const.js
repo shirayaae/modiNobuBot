@@ -16,16 +16,13 @@ module.exports = {
     ["noob","http://i.imgur.com/v7r7fwG.gif"],
     ["jam","http://i.imgur.com/ZXlW6fi.png"],
     ["yorokobe","http://i.imgur.com/CGj0vTt.png"],
-    ["jollitanada","https://i.imgur.com/JffTT0p.png"],
     ["lewd","http://i.imgur.com/XH34as1.jpg"],
     ["f2pbtw","https://i.imgur.com/HajML96.jpg"],
     ["fab","https://i.imgur.com/QmYyjmx.jpg"],
     ["heh","https://i.imgur.com/HWbIorx.png"],
     ["scared","https://i.imgur.com/omeL4UP.jpg"],
     ["call911","https://i.imgur.com/W5kve9L.jpg"],
-    ["taiga","https://i.imgur.com/If7TL9W.jpg"],
     ["boner","https://i.imgur.com/QaphYAM.png"],
-    ["okita","https://i.imgur.com/mQol1kv.jpg"],
     ["wabisabi","https://i.imgur.com/0uUyYn0.jpg"],
     ["normies","https://i.imgur.com/aEHgeMV.jpg"],
     ["dab","https://i.imgur.com/FI19YHn.jpg"],
@@ -35,13 +32,18 @@ module.exports = {
     ["shrug","¯\\_(ツ)_/¯"],
     ["police","http://i.imgur.com/YCxseg7.png"]
   ]),
-    at1: new Map([
+   atone: new Map([
     ["nigga",'https://i.imgur.com/XAuIFpv.png'],
+    ["jollitanada","https://i.imgur.com/JffTT0p.png"],
     ["gangnam",'https://i.imgur.com/A2uNXKu.gif'],
     ["gangnam1",'https://i.imgur.com/Cks4eRP.gif'],
     ["icecream",'https://i.imgur.com/Mj5InrC.png'],
     ["noobs",'https://i.imgur.com/VR2E9po.png'],
-    ["forever",'https://i.imgur.com/ghUIeJt.png'],
+    ["forever",'https://i.imgur.com/ghUIeJt.png']
+  ]),
+   fgo: new Map([
+    ["okita","https://i.imgur.com/mQol1kv.jpg"],
+    ["taiga","https://i.imgur.com/If7TL9W.jpg"]
   ]),
   cirno: new Map([
     ["interested", 'http://i.imgur.com/mFGvw33.png'],
