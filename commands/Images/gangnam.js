@@ -1,6 +1,6 @@
 const Command = require('../../main/command');
 
-module.exports = class GreetCommand extends Command {
+module.exports = class GangnamCommand extends Command {
   constructor(main) {
     super(main, {
       name: "gangnam",
