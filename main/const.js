@@ -32,7 +32,7 @@ module.exports = {
     ["noobs","http://i.imgur.com/VR2E9po.png"],
     ["forever","http://i.imgur.com/ghUIeJt.png"],
     ["fab","http://i.imgur.com/QmYyjmx.jpg"],
-    ["pancakes","https://i.imgur.com/CoPR5ah_d.jpg"], 
+    ["pancakes","http://i.imgur.com/CoPR5ah_d.jpg"], 
     ["lenny","( ͡° ͜ʖ ͡°)"],
     ["tableflip","(╯°□°）╯︵ ┻━┻"],
     ["unflip","┬─┬﻿ ノ( ゜-゜ノ)"],
