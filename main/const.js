@@ -31,6 +31,7 @@ module.exports = {
     ["icecream","http://i.imgur.com/Mj5InrC.png"],
     ["noobs","http://i.imgur.com/VR2E9po.png"],
     ["forever","http://i.imgur.com/ghUIeJt.png"],
+    ["wet","😫🍆💦"], 
     ["fab","http://i.imgur.com/QmYyjmx.jpg"],
     ["pancakes","http://i.imgur.com/CoPR5ah.jpg"], 
     ["lenny","( ͡° ͜ʖ ͡°)"],
