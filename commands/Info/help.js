@@ -40,7 +40,7 @@ module.exports = class HelpCommand extends Command {
             index++;
             ctg[index] = [];
           }
-          ctg[index].push(`[${command}](https://modified-nobu-bot.herokuapp.com/command/${command})`);
+          ctg[index].push(`[${command}]`);
         });
         ctg.forEach((command, index) => {
           if (ctg.length > 1) index = `${item} (${index + 1})`;
