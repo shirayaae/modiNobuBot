@@ -32,7 +32,7 @@ module.exports = class YeetCommand extends Command {
           if (args.toLowerCase() == "aister") args = message.author.username;
         }
         ctx.drawImage(img_bg, 0, 0, 958, 670);
-        ctx.font = "bold 30px Arial";
+        ctx.font = "bold 60px Arial";
         ctx.fillStyle = "white";
         let metrics = ctx.measureText(args);
         ctx.strokeStyle = "black";
