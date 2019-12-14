@@ -10,7 +10,7 @@ module.exports = class PingCommand extends Command {
   }
   run(message, args, prefix) {
     message.channel.send('Pinging...').then(msg => {
-      msg.edit(`Pong! It took ${msg.createdTimestamp - message.createdTimestamp}ms. Hearbeat ping is ${Math.round(this.main.client.ping)}ms`);
+      message.channel.send(`Pong! It took ${msg.createdTimestamp - message.createdTimestamp}ms. Hearbeat ping is ${Math.round(this.main.client.ping)}ms`);
     });
   }
 }
