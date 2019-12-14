@@ -22,8 +22,8 @@ module.exports = class ImageSearchCommand extends Command {
     if (args) {
       let m = await message.channel.send('Searching');
       let result = await snek.get(`http://www.bing.com/images/search?q=${encodeURI(args)}`);
-      if (result = result.text.match(/class="thumb"(?:(?!href)[\s\S])+href="([^"]+)/)) m.send(`First result found for query ${args}: ${result[1]}`);
-      else m.send(`There is no result for query ${args}`);
+      if (result = result.text.match(/class="thumb"(?:(?!href)[\s\S])+href="([^"]+)/)) message.channel.send(`First result found for query ${args}: ${result[1]}`);
+      else message.channel.send(`There is no result for query ${args}`);
     } else message.channel.send(`Error: No argument provided. Please consult \`${prefix}help image\` for more information`);
   }
 }
