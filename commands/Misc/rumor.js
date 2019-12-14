@@ -18,13 +18,13 @@ module.exports = class RumorsCommand extends Command {
   run(message, args, prefix) {
     if (message.guild) {
       message.channel.fetchMessages({limit: 100}).then(messages => {
-        let members = message.author.username;
+        let members = new Map();
         messages.map(m => { if (m.member) {
-          members.set(m.member.id, m.member);
+          members.set(m.member.displayName, m.member);
         }});
-        if (members.size >= 3) members.delete(this.main.client.user.id);
+        if (members.size >= 3) members.delete(this.main.client.user.displayName);
         let player1 = this.main.util.ARand(Array.from(members.values()));
-        members.delete(player1.id);
+        members.delete(player1.displayName);
         let player2 = this.main.util.ARand(Array.from(members.values()));
         message.channel.send(this.main.util.ARand(this.rumors).replace('[1]', player1.displayName).replace('[2]', player2.displayName));
       })
