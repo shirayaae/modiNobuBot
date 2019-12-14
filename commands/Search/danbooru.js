@@ -24,7 +24,7 @@ module.exports = class ImageSearchCommand extends Command {
       if (message.guild.id == "232256303509012480") tag = "rating:q ";
       else tag = "rating:e ";
       url = 'https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=';
-    } else url = 'https://safebooru.donmai.us/posts.json?random=true&limit=1&tags=';
+    } else url = 'https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=';
     args = args.filter(i => { return !i.startsWith('rating:') });
     tag += `*${args.join('* *')}*`;
 
