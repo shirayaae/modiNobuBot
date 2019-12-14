@@ -5,7 +5,7 @@ module.exports = class GangnamCommand extends Command {
     super(main, {
       name: "gangnam1",
       category: "AT1",
-      help: "lmoa gangnam "
+      help: "lmoa gangnam but smoother and more laugh"
     });
   }
   run(message, args, prefix) {
