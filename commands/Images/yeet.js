@@ -36,8 +36,8 @@ module.exports = class YeetCommand extends Command {
         ctx.fillStyle = "white";
         let metrics = ctx.measureText(args);
         ctx.strokeStyle = "black";
-        ctx.strokeText(args, 80 - metrics.width / 2, 130);
-        ctx.fillText(args, 80 - metrics.width / 2, 130);
+        ctx.strokeText(args, 120, 175);
+        ctx.fillText(args, 120, 175);
         message.channel.send("", {file: {attachment:canvas.toBuffer()}});
       };
       img_bg.src = r.body;
