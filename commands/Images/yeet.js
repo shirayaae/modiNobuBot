@@ -29,7 +29,7 @@ module.exports = class YeetCommand extends Command {
           else args = mentions.displayName;
         } else {
           args = args.join(' ');
-          if (args.toLowerCase() == "aister") args = message.author.username;
+          if (args.toLowerCase() == "jerry") args = message.author.username;
         }
         ctx.drawImage(img_bg, 0, 0, 958, 670);
         ctx.font = "bold 60px Arial";
