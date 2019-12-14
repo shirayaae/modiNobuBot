@@ -18,7 +18,7 @@ module.exports = class LoliconCommand extends Command {
       const img_bg = new Canvas.Image();
       img_bg.onload = function () {
         ctx.drawImage(img_bg, 0, 0, 617, 319);
-        ctx.font = "bold 30px Arial";
+        ctx.font = "bold 18px Arial";
         args = message.author.username;
         ctx.fillText(args, 300 - ctx.measureText(args).width / 2, 150);
         message.channel.send("", {file: {attachment:canvas.toBuffer()}});
