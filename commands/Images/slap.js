@@ -29,7 +29,7 @@ module.exports = class SlapCommand extends Command {
           else args = mentions.displayName;
         } else {
           args = args.join(' ');
-          if (args.toLowerCase() == "aister") args = message.author.username;
+          if (args.toLowerCase() == "jerry") args = message.author.username;
         }
         ctx.drawImage(img_bg, 0, 0, 576, 300);
         ctx.font = "bold 30px Arial";
