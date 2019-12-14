@@ -21,7 +21,7 @@ module.exports = class FlipCommand extends Command {
     else args = args.join(' ') || message.author.username;
     message.channel.send(args + "ノ( ゜-゜ノ)").then(mes => {
       setTimeout(function() {
-        mes.edit("(╯°□°）╯︵ " + flip(args));
+        message.channel.send("(╯°□°）╯︵ " + flip(args));
       }, 1000);
     });
   }
