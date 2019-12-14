@@ -26,7 +26,7 @@ module.exports = class RumorsCommand extends Command {
         let player1 = this.main.util.ARand(Array.from(members.values()));
         members.delete(player1.id);
         let player2 = this.main.util.ARand(Array.from(members.values()));
-        message.channel.send(this.main.util.ARand(this.rumors).replace('[1]', player1.nickname).replace('[2]', player2.nickname));
+        message.channel.send(this.main.util.ARand(this.rumors).replace('[1]', player1.user).replace('[2]', player2.user));
       })
     } else {
       message.channel.send("This command can only be used in guilds");
