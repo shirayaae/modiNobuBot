@@ -10,7 +10,7 @@ module.exports = class RumorsCommand extends Command {
     this.rumors = [
       "Psshh, I saw [1] holding hands with [2] while walking down the street last night!!",
       "Psshh, I saw [1] hugging [2] in the amusement park yesterday!!",
-      "Psshh, I saw [1] touching [2] under nitocris's sheets the other day!",
+      "Psshh, I saw [1] touching [2] under sheets the other day!",
       "Psshh, I saw [1] having mana transfer with [2] in the school gym the other day!!"
     ];
   }
@@ -18,7 +18,7 @@ module.exports = class RumorsCommand extends Command {
   run(message, args, prefix) {
     if (message.guild) {
       message.channel.fetchMessages({limit: 100}).then(messages => {
-        let members = new Map();
+        let members = message.author.username;
         messages.map(m => { if (m.member) {
           members.set(m.member.id, m.member);
         }});
