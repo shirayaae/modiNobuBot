@@ -14,7 +14,7 @@ module.exports = class YeetCommand extends Command {
           desc: "The target of the yeet (he deserved it!)"
         }
       ],
-      caseSensitive: false
+      caseSensitive: true
     });
   }
   run(message, args, prefix) {
