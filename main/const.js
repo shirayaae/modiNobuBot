@@ -1,7 +1,7 @@
 module.exports = {
   db: "https://raw.githubusercontent.com/aister/nobuDB/master/",
   rate: {
-    fgo: [25, 25, 25, 25],
+    fgo: [97, 1, 1, 1],
     gacha: {
       GSR: {s5: 1, s4: 20, c5: 24, c4: 100},
       GS: {s5: 1, s4: 4, s3: 100},
