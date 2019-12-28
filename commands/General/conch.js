@@ -24,7 +24,7 @@ module.exports = class ConchCommand extends Command {
 		"Try asking again",
 		"Sure",
 		"Probably not",
-		" It is certain",
+		"It is certain",
 		"Outlook not so good",
 		"Outlook good",
 		"Doubtful",
