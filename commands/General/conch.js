@@ -31,4 +31,5 @@ module.exports = class ConchCommand extends Command {
 	var rand = Math.floor(Math.random() * list.length);
     const randomIndex = Math.floor(Math.random() * responses.length);
 	 message.channel.send(responses[randomIndex]);
+	}
 }
