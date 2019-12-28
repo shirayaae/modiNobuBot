@@ -29,6 +29,7 @@ module.exports = class ConchCommand extends Command {
 		"Outlook good",
 		"Doubtful",
 		"Without a doubt",
+		"Go ahead",
 		"Don't"
 	]; 
     const randomIndex = Math.floor(Math.random() * responses.length);
