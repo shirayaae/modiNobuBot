@@ -11,8 +11,10 @@ module.exports = class ConchCommand extends Command {
           name: "Text",
           desc: "ALL HAIL THE MAGIC CONCH™ "
         }
-      ]
-    });
+      ], 
+      caseSensitive: false
+    })
+  }
 	const responses = [
 		"Yes",
 		"No",
@@ -32,7 +34,5 @@ module.exports = class ConchCommand extends Command {
 	run(message, args, prefix) {
     if (args) message.channel.send(responses[randomIndex]);
     else message.channel.send("Please ask a question");
-	}
-	 
-	}
+  }
 }
