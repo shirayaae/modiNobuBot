@@ -33,8 +33,8 @@ module.exports = class ConchCommand extends Command {
 		"Don't"
 	]; 
     const randomIndex = Math.floor(Math.random() * responses.length);
-    if (args != '') message.channel.send(responses[randomIndex]);
-    if (args = 'Pogi ba si Gio?') message.channel.send("No");
+    if (args = 'Pogi ba si Gio?') message.channel.send("No");	   
+    else if (args != '') message.channel.send(responses[randomIndex]);
     else message.channel.send("Please ask a question");
   }
 }
