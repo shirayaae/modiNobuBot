@@ -36,7 +36,7 @@ module.exports = class ConchCommand extends Command {
     if (message == 'pogi ba si gio?') {message.channel.send('No')}
     else if (message == 'may sars ba si tañada?') {message.channel.send('Yes, definitely')}
     else if (message == 'will i ever get married?') {message.channel.send('Maybe someday')}
-    else if (message != '') {message.channel.send(responses[randomIndex])}
+    else if (args != '') {message.channel.send(responses[randomIndex])}
    else {message.channel.send('Please ask a question')};
   }
 }
