@@ -37,6 +37,6 @@ module.exports = class ConchCommand extends Command {
     else if (args.toLowerCase() = 'may sars ba si tañada?') {message.channel.send("No")}
     else if (args.toLowerCase() = 'will i ever get married?') {message.channel.send("Maybe someday")}
     else if (args != '') {message.channel.send(responses[randomIndex])}
-   {else message.channel.send("Please ask a question")};
+   else {message.channel.send("Please ask a question")};
   }
 }
