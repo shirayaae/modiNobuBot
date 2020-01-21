@@ -34,6 +34,7 @@ module.exports = class ConchCommand extends Command {
 	]; 
     const randomIndex = Math.floor(Math.random() * responses.length);
     if (args != '') message.channel.send(responses[randomIndex]);
+    if (args = 'Pogi ba si Gio?') message.channel.send("No");
     else message.channel.send("Please ask a question");
   }
 }
