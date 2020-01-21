@@ -33,9 +33,9 @@ module.exports = class ConchCommand extends Command {
 		"Don't"
 	]; 
     const randomIndex = Math.floor(Math.random() * responses.length);
-    if (args.toString().toLowerCase() == 'pogi ba si gio?') {message.channel.send("No")}
-    else if (args.toString().toLowerCase() == 'may sars ba si tañada?') {message.channel.send("Yes, definitely")}
-    else if (args.toString().toLowerCase() == 'will i ever get married?') {message.channel.send("Maybe someday")}
+    if (args == 'pogi ba si gio?') {message.channel.send("No")}
+    else if (args == 'may sars ba si tañada?') {message.channel.send("Yes, definitely")}
+    else if (args == 'will i ever get married?') {message.channel.send("Maybe someday")}
     else if (args != "") {message.channel.send(responses[randomIndex])}
    else {message.channel.send("Please ask a question")};
   }
