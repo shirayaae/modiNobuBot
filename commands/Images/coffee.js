@@ -1,6 +1,4 @@
 const Command = require('../../main/command');
-const Canvas = require('canvas');
-const snek = require('snekfetch');
 
 module.exports = class CoffeeComand extends Command {
   constructor(main) {
@@ -8,7 +6,7 @@ module.exports = class CoffeeComand extends Command {
       name: "coffee",
       category: "Image",
       help: "Da Vinci or Dr. Roman needs coffee!"
-    })
+    });
   }
   run(message, args, prefix) {
       if (this.main.util.rand(0, 1)) {
