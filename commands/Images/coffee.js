@@ -7,13 +7,7 @@ module.exports = class CoffeeComand extends Command {
     super(main, {
       name: "coffee",
       category: "Image",
-      args: [
-        {
-          name: "User Mention",
-          desc: "Davinci or Dr. Roman needing coffee"
-        }
-      ],
-      help: "Who needs coffee?"
+      help: "Da Vinci or Dr. Roman needs coffee!"
     })
   }
   run(message, args, prefix) {
