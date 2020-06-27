@@ -17,7 +17,6 @@ module.exports = class IWCommand extends Command {
     })
   }
   run(message, args, prefix) {
-    args = message.mentions.users.first() || message.author;
     message.guild.fetchMember(args).then(i => {
       let avatar = i.user.avatarURL.split('?')[0];
       if (this.main.util.rand(0, 1)) {
