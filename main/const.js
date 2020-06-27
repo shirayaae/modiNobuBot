@@ -34,7 +34,7 @@ module.exports = {
     ["wet","😫🍆💦"], 
     ["f2pbtw","http://i.imgur.com/HajML96.jpg"],
     ["fab","http://i.imgur.com/QmYyjmx.jpg"],
-    ["kevin","https://i.imgur.com/TIz8Zui.jpg"],
+    ["kenneth","https://i.imgur.com/TIz8Zui.jpg"],
     ["pancakes","http://i.imgur.com/CoPR5ah.jpg"], 
     ["silence","http://i.imgur.com/Gt2fC8a.jpg"], 
     ["playlist","http://www.youtube.com/playlist?list=PL0wzLauSWSJdX-3GwV6SEQigg7laPpXS2&jct=yc42KxOWpxNk-ikO10nA3EH4cP_PaQ"], 
