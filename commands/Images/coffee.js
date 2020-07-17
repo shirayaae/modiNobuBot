@@ -4,7 +4,7 @@ module.exports = class CoffeeComand extends Command {
   constructor(main) {
     super(main, {
       name: "coffee",
-      category: "Image",
+      category: "Image Generation",
       help: "Da Vinci or Dr. Roman needs coffee!"
     });
   }
