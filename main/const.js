@@ -49,6 +49,7 @@ module.exports = {
     ["tableflip","(╯°□°）╯︵ ┻━┻"],
     ["unflip","┬─┬﻿ ノ( ゜-゜ノ)"],
     ["shrug","¯\\_(ツ)_/¯"],
+    ["disapproval","ಠ_ಠ"],
     ["police","http://i.imgur.com/YCxseg7.png"]
   ]),
   at1: new Map([
