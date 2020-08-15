@@ -9,6 +9,6 @@ module.exports = class ValCommand extends Command {
     });
   }
   run(message, args, prefix) {
-    message.channel.send('', {file: {attachment: "https://docs.google.com/spreadsheets/d/1KKne3VydVrIa782_Gzlx4p9DmvaXrDt4bcQoG52G0S8/edit?usp=sharing", name: 'INT LIST'}});
+    message.channel.send('', {file: {attachment: "http://docs.google.com/spreadsheets/d/1KKne3VydVrIa782_Gzlx4p9DmvaXrDt4bcQoG52G0S8/edit?usp=sharing", name: 'INT LIST'}});
   }
 }
