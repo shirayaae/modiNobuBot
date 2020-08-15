@@ -9,6 +9,6 @@ module.exports = class ValCommand extends Command {
     });
   }
   run(message, args, prefix) {
-    message.channel.send('https://docs.google.com/spreadsheets/d/1KKne3VydVrIa782_Gzlx4p9DmvaXrDt4bcQoG52G0S8/edit?usp=sharing');
+    message.channel.send('http://docs.google.com/spreadsheets/d/1KKne3VydVrIa782_Gzlx4p9DmvaXrDt4bcQoG52G0S8/edit?usp=sharing');
   }
 }
